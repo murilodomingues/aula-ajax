@@ -13,3 +13,43 @@ function mudar()
 	div.style.backgroundColor = "yellow";
 
 }
+
+function mudarTexto()
+{
+	
+	var div = document.getElementById("texto");
+	var input = document.getElementById("valor");
+	
+	div.innerHTML = input.value;
+
+}
+
+function maiuscula()
+{
+	var div = document.getElementById("texto");
+	var input = document.getElementById("valor");
+	
+	var valor = input.value;
+	
+	div.innerText = valor.toUpperCase();
+}
+
+function letra()
+{
+	var div = document.getElementById("texto");
+	var input = document.getElementById("valor");
+	
+	var valor = input.value;
+	var letra = valor.charAt(0);
+	var resto = valor.substr(1);
+	
+	div.innerText = letra.toUpperCase() + resto.toLowerCase();
+}
+
+
+
+
+
+
+
+
